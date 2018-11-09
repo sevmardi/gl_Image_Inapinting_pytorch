@@ -154,12 +154,12 @@ def test(epoch):
         psnr = 10 * log10(1 / mse.item())
         sum_psnr += psnr
 
-    avg_psnr = sum_psnr / len(testing_data_loader)
-    logger.info("[{}]===> Avg. PSNR: {:.4f} dB".format(epoch, avg_psnr))
-    writer.add_image('Test/input', ToPilImage(input), epoch)
-    writer.add_image('Test/prediction', ToPilImage(prediction), epoch)
-    writer.add_image('Test/target', ToPilImage(target), epoch)
-    writer.add_scalar('PSNR/PSNR', avg_psnr, epoch)
+    # avg_psnr = sum_psnr / len(testing_data_loader)
+    # logger.info("[{}]===> Avg. PSNR: {:.4f} dB".format(epoch, avg_psnr))
+    # writer.add_image('Test/input', ToPilImage(input), epoch)
+    # writer.add_image('Test/prediction', ToPilImage(prediction), epoch)
+    # writer.add_image('Test/target', ToPilImage(target), epoch)
+    # writer.add_scalar('PSNR/PSNR', avg_psnr, epoch)
 
 
 def checkpoint(epoch):

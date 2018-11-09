@@ -19,8 +19,8 @@ import torchvision.transforms as transforms
 
 # Training settings
 parser = argparse.ArgumentParser(description='PyTorch Image devider for trainset')
-parser.add_argument('--in_dir', default="dataset/facade/test", help="super resolution upscale factor")
-parser.add_argument('--out_dir', default="dataset/facade/test", help="super resolution upscale factor")
+parser.add_argument('--in_dir', default="dataset/Facade/test", help="super resolution upscale factor")
+parser.add_argument('--out_dir', default="dataset/Facade/test", help="super resolution upscale factor")
 parser.add_argument('--ImgFormat', default="RGB", help="RGV/YUV")
 
 parser.add_argument('--patchSize', type=int, default=128)
